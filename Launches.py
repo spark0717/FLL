@@ -32,7 +32,7 @@
 #   ["Wait"            ,              4  ],
 # ]
 
-# Run #1- Bench and Slide
+# Run #1- Bench (M04) and Slide (M03)
 East = [
     # Does Bench 
     ["Drive"            ,  0  ,  40  ,  45  ],
@@ -53,23 +53,21 @@ East = [
    
 ]
 
-# NOT UPDATED YET 
-# Does all aspects of the crane mission.
-Crane = [
-    ["DriveUltrasonic" ,  0  ,  10  ,  10  ],
-    ["Turn"            ,  0  ,  40  ,  90  ],
-    ["DriveUltrasonic" ,  90 ,  10  ,  59  ],
-    ["Turn"            ,  0  , -40  ,  0   ],
-    ["DriveUltrasonic" ,  0  ,  20  ,  60  ],
-    ["Drive"           ,  0  ,  2   ,  12  ],
-    ["DriveUltrasonic" ,  0  , -30  ,  30  ],
-    ["Turn"            ,  0  ,  30  ,  90  ],
-    ["DriveUltrasonic" ,  90 , -20  ,  10  ],
-    ["Turn"            ,  5  , -30  ,  0   ],
+
+# Run #2- Step Counter (M02), Pull-up Bar (M06), Boccia (M08), Basketball (M05)
+NorthEast = [
+    ["Drive"           ,  0  ,  50  ,  25  ],
+    ["Drive"           ,  0  ,  20  ,  10  ],
+    ["Drive"           ,  0  ,  -20 ,  -10 ],
+    ["Turn"            ,  25 ,  -30 ,  -30 ],
+    ["Drive"           ,  0  ,  30  ,   15 ],
+    ["Turn"            ,  25 ,  30  ,   15 ],
+    ["Drive"           ,  0  ,  60  ,   35 ],
 ]
 
-# Raises the traffic jam and starts the swing.
-South = [
+# NOT UPDATED YET
+# Run #3- Treadmill (M11), Row machine (M12), Weight machine (M13), Cell phone (M10)
+NorthWest = [
     #Starts turning the motors to lock the towers in place
     ["MotorOn"         ,  0  , -4          ],
     ["Wait"            , 0.80              ],
@@ -109,4 +107,9 @@ South = [
     ["Drive"           ,  90 , -20  , -65  ],
 ]
 
-Launches = [East, South, Crane, MixedTower, InnovativeAndOther]
+#Run #4- Tire Flip (M09), Robot dance (M07)
+RobotDance = [
+    
+]
+
+Launches = [East, NorthEast, NorthWest, RobotDance]
